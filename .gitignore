@@ -5,3 +5,6 @@
 /Samples/EmptyApp/.vs/EmptyApp
 /Samples/EmptyApp/bin/Debug/netcoreapp2.2
 /Samples/EmptyApp/obj
+/Samples/WebApiApp/.vs/WebApiApp
+/Samples/WebApiApp/bin/Debug/netcoreapp2.2
+/Samples/WebApiApp/obj
