@@ -19,6 +19,10 @@ namespace WebApiApp
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+            .ConfigureLogging((hostingContext, builder)=>
+            {
+                builder.AddFile("Logs/log-{Date}.txt");
+            })
+            .UseStartup<Startup>();
     }
 }

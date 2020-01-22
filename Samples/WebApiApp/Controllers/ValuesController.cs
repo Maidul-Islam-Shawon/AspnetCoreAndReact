@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace WebApiApp.Controllers
 {
@@ -10,10 +11,18 @@ namespace WebApiApp.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private ILogger logger;
+
+        public ValuesController(ILoggerFactory factory)
+        {
+            logger = factory.CreateLogger<ValuesController>();
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            logger.LogInformation("Hello World! i am in values/get action");
             return new string[] { "value1", "value2" };
         }
 
