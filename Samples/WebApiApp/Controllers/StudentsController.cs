@@ -53,15 +53,34 @@ namespace WebApiApp.Controllers
         [Route("SaveStudent")]
         public IActionResult SaveStudent([FromBody] Student student)
         {
+            //student.Id = Guid.NewGuid().ToString();
             _context.Students.Add(student);
             _context.SaveChanges();
             return Ok(student);
+        }
+
+        [HttpPut]
+        [Route("EditStudent")]
+        public IActionResult EditStudent(Student student)
+        {
+            _context.Students.Update(student);
+            _context.SaveChanges();
+            return Ok(true);
+
         }
 
         [HttpDelete]
         [Route("DeleteStudnet")]
         public IActionResult DeleteStudnet(int id)
         {
+            var student = _context.Students.Find(id);
+
+            if(student == null)
+            {
+                return NotFound("Object Not Found");
+            }
+            _context.Students.Remove(student);
+            _context.SaveChanges();
             return Ok(id);
         }
 
