@@ -9,3 +9,12 @@
 /Samples/WebApiApp/bin/Debug/netcoreapp2.2
 /Samples/WebApiApp/obj
 /.vs
+/Lms/LmsApp/Common/bin/Debug
+/Lms/LmsApp/Common/obj
+/Lms/LmsApp/LmsApp/bin/Debug/netcoreapp2.2
+/Lms/LmsApp/.vs/LmsApp
+/Lms/LmsApp/Model/bin/Debug
+/Lms/LmsApp/Model/obj
+/Lms/LmsApp/RequestModel/bin/Debug
+/Lms/LmsApp/RequestModel/obj
+/Lms/LmsApp/LmsApp/obj
