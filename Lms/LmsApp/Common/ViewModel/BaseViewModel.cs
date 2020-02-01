@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Common.ViewModel
 {
-    public class BaseViewModel
+    public abstract class BaseViewModel<T> where T:Entity
     {
         public BaseViewModel(Entity entity)
         {

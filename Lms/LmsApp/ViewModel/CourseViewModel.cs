@@ -4,7 +4,7 @@ using System;
 
 namespace ViewModel
 {
-    public class CourseViewModel: BaseViewModel
+    public class CourseViewModel: BaseViewModel<Course>
     {
         public CourseViewModel(Course course):base(course)
         {

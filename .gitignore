@@ -20,3 +20,5 @@
 /Lms/LmsApp/LmsApp/obj
 /Lms/LmsApp/ViewModel/bin/Debug/netcoreapp3.0
 /Lms/LmsApp/ViewModel/obj
+/Lms/LmsApp/Service/bin/Debug/netcoreapp3.0
+/Lms/LmsApp/Service/obj
