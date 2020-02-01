@@ -18,3 +18,5 @@
 /Lms/LmsApp/RequestModel/bin/Debug
 /Lms/LmsApp/RequestModel/obj
 /Lms/LmsApp/LmsApp/obj
+/Lms/LmsApp/ViewModel/bin/Debug/netcoreapp3.0
+/Lms/LmsApp/ViewModel/obj

@@ -1,0 +1,66 @@
+2020-01-29T12:33:42.4273149+00:00  [INF] User profile is available. Using '"C:\Users\shawon\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2020-01-29T12:33:43.0407267+00:00 80000020-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44351/api/values   (ca22a1cb)
+2020-01-29T12:33:43.1090604+00:00 80000020-0007-ff00-b63f-84710c7967bb [INF] Executing endpoint '"WebApiApp.Controllers.ValuesController.Get (WebApiApp)"' (500cc934)
+2020-01-29T12:33:43.1723598+00:00 80000020-0007-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "WebApiApp.Controllers.ValuesController" ("WebApiApp"). (122b2fdf)
+2020-01-29T12:33:43.1877680+00:00 80000020-0007-ff00-b63f-84710c7967bb [INF] Executing action method "WebApiApp.Controllers.ValuesController.Get (WebApiApp)" - Validation state: Valid (dad538d7)
+2020-01-29T12:35:54.1814326+00:00  [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-01-29T12:36:04.5860213+00:00  [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [CoreWebApiAppDb];" (0723d8ff)
+2020-01-29T12:36:04.6568862+00:00  [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CoreWebApiAppDb] SET READ_COMMITTED_SNAPSHOT ON;
+END;" (0723d8ff)
+2020-01-29T12:36:04.7095632+00:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);" (0723d8ff)
+2020-01-29T12:36:04.7151381+00:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-01-29T12:36:04.7162438+00:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-01-29T12:36:04.7201542+00:00  [INF] Applying migration '"20200124214141_init"'. (0e2ac64d)
+2020-01-29T12:36:04.7285970+00:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [Phone] nvarchar(max) NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+);" (0723d8ff)
+2020-01-29T12:36:04.7302445+00:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20200124214141_init', N'2.2.6-servicing-10079');" (0723d8ff)
+2020-01-29T12:38:49.6303606+00:00  [INF] User profile is available. Using '"C:\Users\shawon\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2020-01-29T12:38:50.0672393+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44351/api/values   (ca22a1cb)
+2020-01-29T12:38:50.1184872+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"WebApiApp.Controllers.ValuesController.Get (WebApiApp)"' (500cc934)
+2020-01-29T12:38:50.1390701+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "WebApiApp.Controllers.ValuesController" ("WebApiApp"). (122b2fdf)
+2020-01-29T12:38:50.1504134+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Executing action method "WebApiApp.Controllers.ValuesController.Get (WebApiApp)" - Validation state: Valid (dad538d7)
+2020-01-29T12:39:03.8075867+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Hello World! i am in values/get action (54f1cff2)
+2020-01-29T12:39:05.8567310+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Executed action method "WebApiApp.Controllers.ValuesController.Get (WebApiApp)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 15699.3769ms. (50a9e262)
+2020-01-29T12:39:05.8673560+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2020-01-29T12:39:05.9707948+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Executed action "WebApiApp.Controllers.ValuesController.Get (WebApiApp)" in 15825.9894ms (afa2e885)
+2020-01-29T12:39:05.9737308+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"WebApiApp.Controllers.ValuesController.Get (WebApiApp)"' (99874f2b)
+2020-01-29T12:39:05.9784687+00:00 800000e5-0000-fb00-b63f-84710c7967bb [INF] Request finished in 15912.6393ms 200 application/json; charset=utf-8 (791a596a)
+2020-01-29T12:39:06.0853632+00:00 800000e7-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44351/favicon.ico   (ca22a1cb)
+2020-01-29T12:39:06.0912305+00:00 800000e7-0000-fb00-b63f-84710c7967bb [INF] Request finished in 5.9912ms 404  (791a596a)
+2020-01-29T12:39:12.4511615+00:00 80000596-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44351/api/students   (ca22a1cb)
+2020-01-29T12:39:12.4545387+00:00 80000596-0002-ff00-b63f-84710c7967bb [INF] Request finished in 3.7211ms 404  (791a596a)
+2020-01-29T12:39:18.7405029+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44351/api/students/getstudents   (ca22a1cb)
+2020-01-29T12:39:18.7431923+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Executing endpoint '"WebApiApp.Controllers.StudentsController.GetStudents (WebApiApp)"' (500cc934)
+2020-01-29T12:39:18.7594163+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetStudents\", controller = \"Students\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetStudents(Int32, Int32, System.String, Boolean)" on controller "WebApiApp.Controllers.StudentsController" ("WebApiApp"). (122b2fdf)
+2020-01-29T12:39:19.0112535+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Executing action method "WebApiApp.Controllers.StudentsController.GetStudents (WebApiApp)" - Validation state: Valid (dad538d7)
+2020-01-29T12:39:19.1396053+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Entity Framework Core "2.2.6-servicing-10079" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2020-01-29T12:39:19.3295222+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Phone]
+FROM [Students] AS [x]
+ORDER BY [x].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2020-01-29T12:39:19.3417547+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Executed action method "WebApiApp.Controllers.StudentsController.GetStudents (WebApiApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 327.7331ms. (50a9e262)
+2020-01-29T12:39:19.3437615+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebApiApp.Models.Student, WebApiApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-01-29T12:39:19.3551824+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Executed action "WebApiApp.Controllers.StudentsController.GetStudents (WebApiApp)" in 593.2415ms (afa2e885)
+2020-01-29T12:39:19.3573623+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Executed endpoint '"WebApiApp.Controllers.StudentsController.GetStudents (WebApiApp)"' (99874f2b)
+2020-01-29T12:39:19.3605435+00:00 80000063-0005-fb00-b63f-84710c7967bb [INF] Request finished in 620.4079ms 200 application/json; charset=utf-8 (791a596a)

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Common
+namespace Common.Model
 {
+    [Serializable]
     public class Entity
     {
         public string Id { get; set; }
